@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
-import { Github, Linkedin, Mail, Twitter, Instagram, } from 'lucide-react';
-import {  MapPin,} from 'lucide-react';
+import { Github, Linkedin, Twitter, Instagram, } from 'lucide-react';
+import { MessageCircle, Mail, MapPin } from 'lucide-react';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -15,16 +15,44 @@ const Footer = () => {
           Have a project idea or just want to exchange ideas?
           Send me a message—I’m happy to discuss and am here to help.
             </p>
-            <div className="flex items-start">
-                <div className="mr-4 text-accent">
-                  <MapPin size={20} />
-                </div>
-                <div>
-                  <h4 className="font-medium mb-1">Location</h4>
-                  <p className="text-light-dimmed">Tangerang city, indonesia</p>
-                </div>
-              </div>
             </div>
+            <div>
+            <ul className="space-y-4">
+              <li className="flex items-start gap-3">
+                <MessageCircle className="text-neon-yellow h-5 w-5 mt-0.5" />
+                <div>
+                  <span className="block text-light font-medium mb-4">WhatsApp</span>
+                  <a 
+                    href="https://wa.me/083823795561" 
+                    className="text-gray-300 hover:text-yellow transition-colors"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    +62 3823795561
+                  </a>
+                </div>
+              </li>
+              <li className="flex items-start gap-3">
+                <Mail className="text-neon-yellow h-5 w-5 mt-0.5" />
+                <div>
+                  <span className="block text-light font-medium mb-4">Email</span>
+                  <a 
+                    href="mailto:faridstudio00@gmail.com" 
+                    className="text-gray-300 hover:text-yellow transition-colors"
+                  >
+                    Faridstudio00@gmail.com
+                  </a>
+                </div>
+              </li>
+              <li className="flex items-start gap-3">
+                <MapPin className="text-yellow h-5 w-5 mt-0.5" />
+                <div>
+                  <span className="block text-light font-medium mb-4">Location</span>
+                  <span className="text-gray-300">Tangerang city, indonesia</span>
+                </div>
+              </li>
+            </ul>
+          </div>
 
           <div>
             <h4 className="text-light font-medium mb-4">Navigation</h4>
@@ -92,7 +120,7 @@ const Footer = () => {
                 <Instagram size={20} />
               </a>
               <a
-                href="mychatbot27@gmail.com"
+                href="faridstudio00@gmail.com"
                 className="text-light-dimmed hover:text-accent transition-colors"
                 aria-label="Email"
               >

@@ -17,7 +17,8 @@ function App() {
   return (
     <BrowserRouter>
       <ScrollToTop />
-      <SplashCursor />
+     <SplashCursor />
+     {/* Uncomment if you want to use the SplashCursor component */}
       <div className="flex flex-col min-h-screen">
         <Header />
         <main className="flex-grow">

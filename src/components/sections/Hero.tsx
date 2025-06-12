@@ -15,7 +15,7 @@ const Hero = () => {
   color="#7B7481"
   noiseIntensity={1.5}
   rotation={0}
-/>
+/> 
   </div>
   <div className="relative z-10 w-full max-w-6xl mx-auto">
     <motion.div
@@ -66,7 +66,7 @@ const Hero = () => {
         </Link>
       </motion.div>
       <ScrollVelocity
-  texts={[' Front-End Vibe Coder .', 'Desain mechanical.']}
+  texts={[' Front-End Vibe Coder .', 'Ai Automation .']}
   className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-center py-4 whitespace-normal break-words max-w-full overflow-hidden"
 />
     </motion.div>
